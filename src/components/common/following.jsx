@@ -1,6 +1,5 @@
 import React from "react";
 import UnFollowBtn from "./unFollowBtn";
-import Pagination from "./pagination";
 
 const Following = (props) => {
   const { following } = props;

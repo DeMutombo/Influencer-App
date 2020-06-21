@@ -42,6 +42,7 @@ class Influencers extends Component {
       following,
       currentPage,
       pageSize,
+      isFollowing,
     } = this.state;
     if (allInfluencers.length === 0)
       return (
@@ -70,6 +71,7 @@ class Influencers extends Component {
           <div className="brownBox">
             <FollowingBadge
               following={following}
+              isFollowing={isFollowing}
               onShowFollowing={() => this.handleShowFollowing()}
             />
             {influencers.map((influencer) => (
